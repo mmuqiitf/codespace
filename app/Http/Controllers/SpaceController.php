@@ -139,7 +139,7 @@ class SpaceController extends Controller
         }
 
         foreach ($space->photos as $photo) {
-            Storage::delete('public/'.$photo->path);
+            Storage::delete('public/' . $photo->path);
         }
 
         $space->delete();
